@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,34 +18,96 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
-.container{
+.container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 2rem auto; 
+  margin-top: 2rem auto;
   padding: 1rem;
-  width: 80%;
+  width: 60vw;
   margin: 2rem auto;
-  max-width: 1200px;
+  z-index: 60;
+  background-color: rgb(206, 206, 206);
 }
-.nav-list{
+.nav-list {
   display: flex;
   list-style: none;
   gap: 2vw;
 }
-.login-sec{
+.login-sec {
   display: flex;
   gap: 2vw;
 }
-button{
+button {
   background-color: aquamarine;
-
+}
+.img-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  background-size: cover;
+  pointer-events: none;
+  z-index: -2;
+  filter: grayscale(80%);
+}
+.header-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+h2 {
+  font-size: 3rem;
+  color: white;
+}
+h1 {
+  text-align: center;
+font-size: 5rem;
+  width: 100vw;
+  color: white;
+  font-style: italic;
+}
+.h1-style {
+  color: rgba(245, 200, 0, 0.993);
+}
+.detail {
+  height: 100vh;
+  background-color: rgb(28, 161, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-detail {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.detail-images{
+  gap: 2rem;
+  display: flex;
+  margin-bottom: 2%;
+}
+.images-pic {
+  height: 10rem;
+  background-color: white;
+  width: 15rem;
 }
