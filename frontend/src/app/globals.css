@@ -41,7 +41,7 @@ body {
   width: 60vw;
   margin: 2rem auto;
   z-index: 60;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(251, 251, 251);
 }
 .nav-list {
   display: flex;
@@ -65,7 +65,7 @@ button {
   background-size: cover;
   pointer-events: none;
   z-index: -2;
-  filter: grayscale(80%);
+  /* filter: grayscale(80%); */
 }
 .header-sec {
   display: flex;
@@ -73,6 +73,7 @@ button {
   align-items: center;
   height: 50vh;
   width: 100vw;
+ 
 }
 h2 {
   font-size: 3rem;
@@ -95,6 +96,7 @@ font-size: 5rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .text-detail {
   width: 50%;
@@ -103,11 +105,27 @@ font-size: 5rem;
 }
 .detail-images{
   gap: 2rem;
-  display: flex;
+  display: grid;
+  grid: auto auto / auto auto auto ;
   margin-bottom: 2%;
 }
 .images-pic {
   height: 10rem;
   background-color: white;
   width: 15rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .detail-images{
+    gap: 2rem;
+    display: grid;
+    grid: auto auto / auto auto ;
+    margin-bottom: 2%;
+  }
+  .detail{
+    height: 150vh;
+  }
+  h1{
+    font-size: 4rem;
+  }
 }

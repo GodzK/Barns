@@ -22,7 +22,7 @@ export default function Home() {
       <div className="detail">
         <div></div>
         <div className="text-detail">
-            <h2>How it Work</h2>
+          <h2>How it Work</h2>
         </div>
         <div className="text-detail">
           <p>
@@ -33,26 +33,12 @@ export default function Home() {
           </p>
         </div>
         <div className="detail-images">
-          <div className="images-pic">
-
-          </div>
-          <div className="images-pic">
-            
-          </div>
-          <div className="images-pic">
-            
-          </div>
-        </div>
-        <div className="detail-images">
-          <div className="images-pic">
-
-          </div>
-          <div className="images-pic">
-            
-          </div>
-          <div className="images-pic">
-            
-          </div>
+          <div className="images-pic"></div>
+          <div className="images-pic"></div>
+          <div className="images-pic"></div>
+          <div className="images-pic"></div>
+          <div className="images-pic"></div>
+          <div className="images-pic"></div>
         </div>
       </div>
     </>
